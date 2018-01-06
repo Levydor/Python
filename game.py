@@ -101,7 +101,7 @@ print("Show info():\n",p1.toString()+"\n",p2.toString())
 print()
 print("\n"*2)
 
-fight(p1,p2)
+Hero.fight(p1,p2)
 '''
 print(a.toString())
 print(f.toString())
