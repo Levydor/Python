@@ -38,33 +38,34 @@ class Hero:
         return "{} has power strength of {} points and {} health points".format(self.__name,
                                                                                 self.__power,
                                                                                 self.__health)
-######## check if possible
-    def isAlive(p1):
-        p1.__health>0
-        return true
+    def isAlive(self):
+        return self.__health>0
 
-    def strike(self,opponent):
-        opponent.__health -= self.__power
+    def show_info(self):
+        return("{}'s health points:{}".format(self.__name,self.get_health()))
+
+    @staticmethod
+    def strike(p1,p2):
+        p1.__health -= p2.__power
 
     def to_s(self):
         return "{name}: Health:{health}, Power:{power}"
 
-    ######## check if possible
+    @staticmethod
     def fight(p1,p2):
         print("Let the games begin")
         while p1.isAlive()and p2.isAlive():
-            p1.strike(p2)
-            p2.strike(p1)
-            show_info(p1,p2)
+            Hero.strike(p1,p2)
+            Hero.strike(p2,p1)
+            print(p1.show_info()+"\n"+p2.show_info())
         if p1.isAlive():
-            print("{} WON!"(p1.__name))
+            print("{} WON!".format(p1.__name))
         elif p2.isAlive():
-            print("{} WON!"(p2.__name))
+            print("{} WON!".format(p2.__name))
         else:
             print("TIE!!")
 
-    def show_info():
-        print("{}'s health:{} ||{}'s health:{}".format(p1.__name,p1.get_health(),p2.__name,p1.get_health()))
+
 
 class Vilin(Hero):
      __weakness= ""
@@ -87,26 +88,19 @@ class Vilin(Hero):
                                                                                                             self.__power,
                                                                                                              self.__health,
                                                                                                                 self.__weakness)
-         def alive(self,health):
-             if self.get_health <=0:
-                 print()
 
+p1 = Hero('Superman', 5, 70)
+p2 = Hero('Bardus',4,901)
+Hero.fight(p1,p2)
 
-
-p1=Hero('Superman', 5, 70)
-p2=Hero('Spiderman',5,40)
-p3=Vilin('Green goblin', 7, 30, "water")
-print("\n"*2)
-print("Show info():\n",p1.toString()+"\n",p2.toString())
-print()
-print("\n"*2)
-
-fight(p1,p2)
 '''
+p3 = Vilin('Green goblin', 7, 30, "water")
+print("\n"*2)
+print("Show info():\n",p1.to_s()+"\n",p2.to_s())
+print("\n"*2)
+
 print(a.toString())
 print(f.toString())
-
-
 
 a = Hero('Superman', 5, 70)
 b = Hero('Spiderman', 7, 60)
@@ -120,14 +114,4 @@ h = Vilin('Lex luthor', 6, 50, "human")
 print ('Choose your Superhero')
 #name =sys.stdin.readline()
 #print ('Get ready', name ,end='!!')
-'''                                                                     # %C can replace a string
-
-
-
-
-
-
-
-
-
-
+'''
