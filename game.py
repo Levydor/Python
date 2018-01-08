@@ -93,6 +93,7 @@ p1 = Hero('Superman', 5, 70)
 p2 = Hero('Bardus',4,901)
 Hero.fight(p1,p2)
 
+
 '''
 p3 = Vilin('Green goblin', 7, 30, "water")
 print("\n"*2)
