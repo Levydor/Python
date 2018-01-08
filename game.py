@@ -100,6 +100,11 @@ print("\n"*2)
 print("Show info():\n",p1.to_s()+"\n",p2.to_s())
 print("\n"*2)
 
+<<<<<<< HEAD
+=======
+Hero.fight(p1,p2)
+'''
+>>>>>>> 2ecc016b67618b9c4bf0c7dccbd0d38e488d37b7
 print(a.toString())
 print(f.toString())
 
