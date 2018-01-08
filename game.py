@@ -95,29 +95,20 @@ Hero.fight(p1,p2)
 
 
 '''
+print ('Choose your Superhero')
+#name =sys.stdin.readline()
+#print ('Get ready', name ,end='!!')
+
 p3 = Vilin('Green goblin', 7, 30, "water")
 print("\n"*2)
 print("Show info():\n",p1.to_s()+"\n",p2.to_s())
 print("\n"*2)
 
-<<<<<<< HEAD
-=======
-Hero.fight(p1,p2)
-'''
->>>>>>> 2ecc016b67618b9c4bf0c7dccbd0d38e488d37b7
-print(a.toString())
-print(f.toString())
-
 a = Hero('Superman', 5, 70)
 b = Hero('Spiderman', 7, 60)
-c = Hero('Wonderwomen', 5, 75)
 d = Hero('Flash', 4, 90)
 f = Vilin('Green goblin', 7, 30, "water")
 g = Vilin('The Joker', 5, 40, "daylight")
 h = Vilin('Lex luthor', 6, 50, "human")
 
-
-print ('Choose your Superhero')
-#name =sys.stdin.readline()
-#print ('Get ready', name ,end='!!')
 '''
