@@ -90,7 +90,7 @@ class Vilin(Hero):
                                                                                                                 self.__weakness)
 
 p1 = Hero('Superman', 5, 70)
-p2 = Hero('Bardus',4,901)
+p2 = Hero('WonderWomen',4,95)
 Hero.fight(p1,p2)
 
 
