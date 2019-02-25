@@ -35,9 +35,8 @@ class Hero:
         print("Hero")
 
     def toString(self):
-        return "{} has power strength of {} points and {} health points".format(self.__name,
-                                                                                self.__power,
-                                                                                self.__health)
+        return "{} has power strength of {} points and {} health points".format(self.__name,self.__power,self.__health)
+    
     def isAlive(self):
         return self.__health>0
 
